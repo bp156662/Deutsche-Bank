@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - German Bank</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        #login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        #bank-logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #forgot-link {
+            display: block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        #alternative-login {
+            margin-top: 20px;
+            color: #333;
+        }
+        #back-to-home {
+            display: block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-container">
+        <img id="bank-logo" src="https://img.freepik.com/vektoren-premium/drei-dollar-symbol-amerikanisches-geldsymbol-zeichen-cash-vektor_744955-33.jpg" alt="Bank Logo">
+        <h2>German Bank</h2>
+
+        <form>
+            <label for="username">Benutzername oder E-Mail-Adresse:</label>
+            <input type="text" id="username" name="username" placeholder="Benutzername oder E-Mail-Adresse" required>
+
+            <label for="password">Passwort:</label>
+            <input type="password" id="password" name="password" placeholder="Passwort" required>
+
+            <label for="otp">2-Faktor-Authentifizierung:</label>
+            <input type="text" id="otp" name="otp" placeholder="Einmalpasswort" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+
+        <a href="#" id="forgot-link">Passwort vergessen / Benutzername vergessen</a>
+
+        <div id="alternative-login">
+            <p>Alternativer Login:</p>
+            <!-- Hier könnten zusätzliche Login-Optionen eingefügt werden, wie z.B. Face-ID -->
+        </div>
+
+        <a href="Startseite" id="back-to-home">Zurück zur Homepage der Bank</a>
+    </div>
+
+    <script>
+        function login() {
+            // Hier könnte die Login-Logik implementiert werden
+            alert("Login erfolgreich!");
+        }
+    </script>
+</body>
+</html>
